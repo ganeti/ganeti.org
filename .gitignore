@@ -1,1 +1,5 @@
+.bundle/
+.vscode/
+Gemfile.lock
 _site/
+vendor/
