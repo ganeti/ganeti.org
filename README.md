@@ -3,7 +3,7 @@
 This is the draft for a new ganeti.org website, once the transition from Google to the community has finished.
 
 ## Local Development
-To do development, you need ruby/bundler/jekyll installed on your workstation. Here are the steps to get this up and running a current Ubuntu 19.04. It probably applies to Debian stretch/buster and Ubuntu 18.04 as well:
+To do development, you need ruby/bundler/jekyll installed on your workstation. Here are the steps to get this up and running on a current Ubuntu 19.04. It probably applies to Debian stretch/buster and Ubuntu 18.04 as well:
 ```
 git clone git@github.com:sipgate/ganeti.org
 cd ganeti.org
