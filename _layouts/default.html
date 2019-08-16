@@ -5,10 +5,11 @@
 	<title>{{ page.title }}</title>
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<nav>
+	<nav id="navigation">
 		<div class="logo">
 			<a href="/"><img src="ganeti.png" height="48px"></a>
 		</div>
@@ -32,11 +33,17 @@
 				<a href="mailto:hello@ganeti.org" rel="noreferrer noopener"><img src="./static/mail.svg" width="24px"></a>
 			</li>
 		</ul>
+
+		<button id="mobile-menu-button">
+			<img src="./static/menu.svg" alt="">
+		</button>
 	</nav>
 	
 	<main>
 		{{ content }}
 	</main>
+
+	<script src="./js/app.js"></script>
 </body>
 
 </html>
