@@ -2,35 +2,37 @@
 layout: default
 title: Ganeti - Features
 ---
-<div class="content">
-  <h1>Current Ganeti Features</h1>
-  <ul>
-    <li>Support for Xen virtualization</li>
+<article>
+  <section>
+    <h1>Current Ganeti Features</h1>
     <ul>
-      <li>Support for PVM and HVM instances</li>
-      <li>Support for live migration</li>
-      <li>Virtual console (on PVM) or VNC (on HVM) to control instances</li>
-      <li>Support for virtio or emulated devices</li>
+      <li>Support for Xen virtualization</li>
+      <ul>
+        <li>Support for PVM and HVM instances</li>
+        <li>Support for live migration</li>
+        <li>Virtual console (on PVM) or VNC (on HVM) to control instances</li>
+        <li>Support for virtio or emulated devices</li>
+      </ul>
+      <li>Support for KVM virtualization</li>
+      <ul>
+        <li>Support for live migration</li>
+        <li>Support for fully virtualized instances</li>
+        <li>Support for semi-virtualized instances (kernel residing on the host)</li>
+        <li>Support for VNC, Spice or serial access</li>
+        <li>Support for virtio or emulated devices </li>
+      </ul>
+      <li>Cluster size of 1-100 physical nodes (recommended)</li>
+      <li>Disk management</li>
+      <ul>
+        <li>Plain LVM volumes</li>
+        <li>Files</li>
+        <li>Across-the-network RAID1 (using DRBD) for quick recovery in case of physical system failure</li>
+        <li>Support for third party storage solutions using External Storage Providers and shared filesystems (disk images
+          on NFS, for example) </li>
+      </ul>
+      <li>Instance disk partitioning</li>
+      <li>Export/import mechanism for backup purposes or migration between clusters</li>
+      <li>Automated instance migration across clusters </li>
     </ul>
-    <li>Support for KVM virtualization</li>
-    <ul>
-      <li>Support for live migration</li>
-      <li>Support for fully virtualized instances</li>
-      <li>Support for semi-virtualized instances (kernel residing on the host)</li>
-      <li>Support for VNC, Spice or serial access</li>
-      <li>Support for virtio or emulated devices </li>
-    </ul>
-    <li>Cluster size of 1-100 physical nodes (recommended)</li>
-    <li>Disk management</li>
-    <ul>
-      <li>Plain LVM volumes</li>
-      <li>Files</li>
-      <li>Across-the-network RAID1 (using DRBD) for quick recovery in case of physical system failure</li>
-      <li>Support for third party storage solutions using External Storage Providers and shared filesystems (disk images
-        on NFS, for example) </li>
-    </ul>
-    <li>Instance disk partitioning</li>
-    <li>Export/import mechanism for backup purposes or migration between clusters</li>
-    <li>Automated instance migration across clusters </li>
-  </ul>
-</div>
+  </section>
+</article>

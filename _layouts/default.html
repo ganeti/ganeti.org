@@ -10,7 +10,7 @@
 <body>
 	<nav>
 		<div class="logo">
-			<img src="ganeti.png" height="48px">
+			<a href="/"><img src="ganeti.png" height="48px"></a>
 		</div>
 
 		<ul>
@@ -23,18 +23,20 @@
 			<li><a href="https://github.com/ganeti/ganeti/issues">Issues</a></li>
 			<li><a href="https://github.com/ganeti/ganeti/wiki">Wiki</a></li>
 		</ul>
+
+		<ul>
+			<li>
+				<a href="https://github.com/hganeti" target="_blank" rel="noreferrer noopener"><img src="./static/github.svg" width="24px"></a>
+			</li>
+			<li>
+				<a href="mailto:hello@ganeti.org" rel="noreferrer noopener"><img src="./static/mail.svg" width="24px"></a>
+			</li>
+		</ul>
 	</nav>
 	
 	<main>
 		{{ content }}
 	</main>
-	
-	<footer>
-		<ul>
-			<li><a href="mailto:hello@ganeti.org">email</a></li>
-			<li><a href="https://github.com/hganeti">github.com/ganeti</a></li>
-		</ul>
-	</footer>
 </body>
 
 </html>

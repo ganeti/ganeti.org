@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    background-color: lighten($color-6, 45);
+    background-color: lighten($color-06, 45);
 
     ul {
         list-style: none;
@@ -14,11 +14,11 @@ footer {
 
             a {
                 text-decoration: none;
-                color: $color-6;
+                color: $color-06;
                 padding: 0.25rem;
 
                 &:hover {
-                    color: $color-4;
+                    color: $color-04;
                 }
             }
         }

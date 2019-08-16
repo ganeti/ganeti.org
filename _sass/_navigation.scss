@@ -8,33 +8,34 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid lighten($color-6, 30);
-    background-color: $color-7;
+    background-color: $color-07;
+    box-shadow: 0 0 16px #BDBDBD, 0 0 24px #F5F5F5;
 
     ul {
         display: inline;
         padding: 0;
         margin: 0;
 
+        &:first-child {
+            flex-grow: 1;
+        }
+
         li {
-            display: inline;
+            display: inline-block;
             list-style: none;
 
             a {
+                display: inline-block;
                 text-decoration: none;
-                color: $color-6;
+                color: $text-01;
                 padding: 0.25rem;
 
-                &:link {
-                    color: $color-6;
-                }
-
                 &:hover {
-                    color: $color-4;
+                    color: $color-04;
                 }
 
                 &:active {
-                    color: $color-4;
+                    color: $color-04;
                 }
             }
         }
