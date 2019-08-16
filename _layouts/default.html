@@ -8,29 +8,31 @@
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/gettingstarted.html">Getting Started</a></li>
-			<li><a href="/features.html">Features</a></li>
-			<li><a href="/community.html">Community</a></li>
-			<li><a href="http://docs.ganeti.org/">Documentation</a></li>
-			<li><a href="https://github.com/ganeti/ganeti">Code</a></li>
-			<li><a href="https://github.com/ganeti/ganeti/issues">Issues</a></li>
-			<li><a href="https://github.com/ganeti/ganeti/wiki">Wiki</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-
-		{{ content }}
-
-	</div><!-- /.container -->
-	<footer>
-		<ul>
-			<li><a href="mailto:hello@ganeti.org">email</a></li>
-			<li><a href="https://github.com/hganeti">github.com/ganeti</a></li>
-		</ul>
-	</footer>
+	<div id="root">
+		<nav>
+			<div class="logo">
+				<img src="ganeti.png" height="48px">
+			</div>
+	
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/gettingstarted.html">Getting Started</a></li>
+				<li><a href="/features.html">Features</a></li>
+				<li><a href="/community.html">Community</a></li>
+				<li><a href="http://docs.ganeti.org/">Documentation</a></li>
+				<li><a href="https://github.com/ganeti/ganeti">Code</a></li>
+				<li><a href="https://github.com/ganeti/ganeti/issues">Issues</a></li>
+				<li><a href="https://github.com/ganeti/ganeti/wiki">Wiki</a></li>
+				<li><a href="mailto:hello@ganeti.org">email</a></li>
+				<li><a href="https://github.com/hganeti">github.com/ganeti</a></li>
+			</ul>
+		</nav>
+		<main>
+	
+			{{ content }}
+	
+		</main>
+	</div>
 </body>
 
 </html>
