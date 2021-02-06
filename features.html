@@ -8,6 +8,15 @@ title: Ganeti - Features
   </header>
   <section>
     <ul>
+      <li>Support for KVM virtualization</li>
+      <ul>
+        <li>Support for live migration</li>
+        <li>Support for fully virtualized instances</li>
+        <li>Support for semi-virtualized instances (kernel residing on the host)</li>
+        <li>Support for VNC, Spice or serial access</li>
+        <li>Support for virtio or emulated devices</li>
+        <li>Support for hotplugging NICs or disks</li>
+      </ul>
       <li>Support for Xen virtualization</li>
       <ul>
         <li>Support for PVM and HVM instances</li>
@@ -15,26 +24,25 @@ title: Ganeti - Features
         <li>Virtual console (on PVM) or VNC (on HVM) to control instances</li>
         <li>Support for virtio or emulated devices</li>
       </ul>
-      <li>Support for KVM virtualization</li>
-      <ul>
-        <li>Support for live migration</li>
-        <li>Support for fully virtualized instances</li>
-        <li>Support for semi-virtualized instances (kernel residing on the host)</li>
-        <li>Support for VNC, Spice or serial access</li>
-        <li>Support for virtio or emulated devices </li>
-      </ul>
       <li>Cluster size of 1-100 physical nodes (recommended)</li>
+      <li>Automatic distribution/balancing of instances throughout the cluster</li>
       <li>Disk management</li>
       <ul>
         <li>Plain LVM volumes</li>
         <li>Files</li>
         <li>Across-the-network RAID1 (using DRBD) for quick recovery in case of physical system failure</li>
+        <li>RBD (Ceph)</li>
+        <li>Gluster</li>
         <li>Support for third party storage solutions using External Storage Providers and shared filesystems (disk images
           on NFS, for example) </li>
       </ul>
-      <li>Instance disk partitioning</li>
+      <li>Instance management</li>
+      <ul>
+        <li>Interface for automated OS installs</li>
+        <li>Instance disk partitioning</li>
+      </ul>
       <li>Export/import mechanism for backup purposes or migration between clusters</li>
-      <li>Automated instance migration across clusters </li>
+      <li>Automated instance migration across clusters</li>
     </ul>
   </section>
 </article>
