@@ -5,18 +5,43 @@ title: Ganeti - Features
 <article>
   <header>
     <h1>Ganeti Features</h1>
+    <p>
+      Ganeti provides a variety of virtualisation and storage options. However, currently not all of them are
+      maintained in a way we would like them to be. If you are using one of the unmaintaned features and would
+      like to help with (automated) testing and development, please visit the <a href="/community.html">community</a>
+      page and get in contact with us!
+    </p>
   </header>
   <section>
+    <h3>Fully maintained features</h3>
     <ul>
+      <li>General Features</li>
+      <ul>
+        <li>Cluster size of 1-100 physical nodes (recommended)</li>
+        <li>Automated resource/instance allocation and cluster balancing</li>
+        <li>Automated operating system installs through OS provider interface</li>
+        <li>Export/import mechanism for backup purposes or migration between clusters</li>
+      </ul>
       <li>Support for KVM virtualization</li>
       <ul>
         <li>Support for live migration</li>
-        <li>Support for fully virtualized instances</li>
-        <li>Support for semi-virtualized instances (kernel residing on the host)</li>
-        <li>Support for VNC, Spice or serial access</li>
+        <li>Support for fully- and semi-virtualized instances</li>
+        <li>Support for (optionally encrypted) VNC, Spice or serial access</li>
         <li>Support for virtio or emulated devices</li>
         <li>Support for hotplugging NICs or disks</li>
       </ul>
+      <li>Storage options</li>
+      <ul>
+        <li>Local LVM volumes</li>
+        <li>Local files</li>
+        <li>Files on a shared medium (e.g. NFS)</li>
+        <li>DRBD8</li>
+      </ul>
+    </ul>
+  </section>
+  <section>
+    <h3>Currently unmaintained features</h3>
+    <ul>
       <li>Support for Xen virtualization</li>
       <ul>
         <li>Support for PVM and HVM instances</li>
@@ -24,24 +49,14 @@ title: Ganeti - Features
         <li>Virtual console (on PVM) or VNC (on HVM) to control instances</li>
         <li>Support for virtio or emulated devices</li>
       </ul>
-      <li>Cluster size of 1-100 physical nodes (recommended)</li>
-      <li>Automatic distribution/balancing of instances throughout the cluster</li>
-      <li>Disk management</li>
+      <li>Support for LXC containers</li>
+      <li>Support for chroot-based services</li>
+      <li>Storage options</li>
       <ul>
-        <li>Plain LVM volumes</li>
-        <li>Files</li>
-        <li>Across-the-network RAID1 (using DRBD) for quick recovery in case of physical system failure</li>
-        <li>RBD (Ceph)</li>
+        <li>Ceph/RBD</li>
         <li>Gluster</li>
-        <li>Support for third party storage solutions using External Storage Providers and shared filesystems (disk images
-          on NFS, for example) </li>
+        <li>External Storage Providers: support for custom/third party storage solutions</li>
       </ul>
-      <li>Instance management</li>
-      <ul>
-        <li>Interface for automated OS installs</li>
-        <li>Instance disk partitioning</li>
-      </ul>
-      <li>Export/import mechanism for backup purposes or migration between clusters</li>
       <li>Automated instance migration across clusters</li>
     </ul>
   </section>
