@@ -6,22 +6,38 @@ title: Ganeti - Getting Started
 <article>
     <header>
         <h1>Getting Started</h1>
-        <p>This section will guide you to set up Ganeti - please check back for future updates!</p>
     </header>
     
     <section>
         <p>
-            For the following distributions you may use your package manager to install the Ganeti packages:
-        <ul>
-            <li>Debian</li>
-            <li>Ubuntu</li>
-            <li>Gentoo</li>
-        </ul>
+            This page will show you how install Ganeti on various Linux distributions. Further information about dependencies
+            and cluster initialisation can be found in <a href="https://docs.ganeti.org/docs/ganeti/3.0/html/install.html">this Guide</a>.
+        <p>
+        <h3>Debian</h3>
+        <p>
+            Debian provides packages out of the box. More recent packages can usually be found through
+            <a href="https://backports.debian.org/">Debian Backports</a>.
+        </p>
+
+        <h3>Ubuntu</h3>
+        <p>
+            Please use <a href="https://launchpad.net/~pkg-ganeti-devel/+archive/ubuntu/lts">this PPA</a> if you would like to run Ganeti on Ubuntu.
+        </p>
+
+        <h3>RedHat/CentOS</h3>
+        <p>
             For Redhat/CentOS based systems, please head over to <a href="https://jfut.integ.jp/linux/ganeti/">this repository</a>.
         </p>
+
+        <h3>Other Distributions / Source builds</h3>
         <p>
-        We also provide Ubuntu packages through <a href="https://launchpad.net/~pkg-ganeti-devel/+archive/ubuntu/lts">this PPA</a>.<br>
-        Additionally, we provide nightly packages for Debian and Ubuntu off the project's master branch via <a href="https://deb.ganeti.dev">this Repository</a>. <b>These nightly packages are only for testing purposes, do not use them in production! There is no upgrade path between nightly builds!</b>
+            You can also build Ganeti directly from source - please read <a href="https://github.com/ganeti/ganeti/blob/master/INSTALL">these instructions</a> carefully.
+        </p>
+
+        <h3>Nightly/Developer builds</h3>
+        <p>
+        We provide nightly packages for Debian and Ubuntu off the project's master branch via <a href="https://deb.ganeti.dev">this repository</a>.<br>
+        <b>These packages are only for testing purposes, do not use them in production! There is no upgrade path between nightly builds!</b>
         </p>
     </section>
 </article>
